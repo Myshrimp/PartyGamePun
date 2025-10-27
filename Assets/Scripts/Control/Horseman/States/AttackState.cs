@@ -1,51 +1,38 @@
 ﻿using GameFramework.Fsm;
-using ScriptableObjects;
-using UnityEngine;
+
 namespace Control.States
 {
-    public class HorsemanStateBase:FsmState<HorsemanEntity>
+    public class AttackState:HorsemanStateBase
     {
-        protected InputHandler _input;
-        protected StateConfig _state_config;
-        protected float _timer = 0;
-        public void SetInputHandler(InputHandler input_handler)
-        {
-            _input = input_handler;
-        }
-
         protected override void OnInit(IFsm<HorsemanEntity> fsm)
         {
             base.OnInit(fsm);
-            SetInputHandler(fsm.Owner.GetInputHandler());
-            _state_config = fsm.Owner.StateConfig;
         }
 
         protected override void OnEnter(IFsm<HorsemanEntity> fsm)
         {
             base.OnEnter(fsm);
+            fsm.Owner.SetAnimState("IsAttack", true);
         }
 
         protected override void OnUpdate(IFsm<HorsemanEntity> fsm, float elapseSeconds, float realElapseSeconds)
         {
             base.OnUpdate(fsm, elapseSeconds, realElapseSeconds);
-            _timer += Time.deltaTime;
+            if (_timer > GetStateProperty("AttackState").duration)
+            {
+                ChangeState<IdleState>(fsm);
+            }
         }
 
         protected override void OnLeave(IFsm<HorsemanEntity> fsm, bool isShutdown)
         {
             base.OnLeave(fsm, isShutdown);
-            _timer = 0;
+            fsm.Owner.SetAnimState("IsAttack", false);
         }
-        
+
         protected override void OnDestroy(IFsm<HorsemanEntity> fsm)
         {
             base.OnDestroy(fsm);
-            _input = null;
-        }
-
-        protected StateProperty GetStateProperty(string name)
-        {
-            return _state_config.GetStateProperty(name);
         }
     }
 }

@@ -19,7 +19,10 @@ namespace Control.States
         protected override void OnUpdate(IFsm<HorsemanEntity> fsm, float elapseSeconds, float realElapseSeconds)
         {
             base.OnUpdate(fsm, elapseSeconds, realElapseSeconds);
-            
+            if (_input.GetBool(InputType.Attack))
+            {
+                ChangeState<AttackState>(fsm);
+            }
         }
 
         protected override void OnLeave(IFsm<HorsemanEntity> fsm, bool isShutdown)
