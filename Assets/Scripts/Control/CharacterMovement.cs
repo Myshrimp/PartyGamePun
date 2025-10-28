@@ -54,6 +54,11 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
+    public Vector3 GetVelocity()
+    {
+        return rb.velocity;
+    }
+
     /// <summary>
     /// 处理移动逻辑
     /// </summary>

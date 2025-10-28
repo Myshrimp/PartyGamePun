@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Party
 {
@@ -30,5 +31,17 @@ namespace Party
     public class IntProperty : Property
     {
         public int value;
+    }
+
+    [Serializable]
+    public class StringProperty : Property
+    {
+        public string value;
+    }
+
+    [Serializable]
+    public class GameObjectProperty : Property
+    {
+        public GameObject value;
     }
 }

@@ -11,12 +11,14 @@ namespace Control
     {
         [SerializeField] private StateConfig _state_config;
         [SerializeField] private CharacterConfig _character_config;
+        [SerializeField] private CameraController _cam_controller;
         private CharacterMovement _move;
         private static int SERIAL_ID=1;
         private IFsm<HorsemanEntity> _fsm;
         private Animator _animator;
         private InputHandler _input_handler;
         private float _max_speed;
+        private float _sprint_speed;
         public StateConfig StateConfig
         {
             get { return _state_config; }
@@ -31,13 +33,40 @@ namespace Control
             _move = GetComponent<CharacterMovement>();
 
             _max_speed = _character_config.float_map["MaxSpeed"];
+            _sprint_speed = _character_config.float_map["SprintSpeed"];
             InitFsm();
+        }
+
+        private void Start()
+        {
+            _cam_controller.SwitchState(CameraController.CameraState.FollowPlayer);
         }
 
         private void Update()
         {
             _input_handler.OnUpdate();
-            _move.Move(_input_handler.GetVec3(InputType.Move), _max_speed);
+
+            HandleMovement();
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                _cam_controller.SwitchState(CameraController.CameraState.LockTarget);
+            }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                _cam_controller.SwitchState(CameraController.CameraState.Shake);
+            }
+        }
+
+        private void HandleMovement()
+        {
+            float speed = _max_speed;
+            if (_input_handler.GetBool(InputType.Sprint))
+            {
+                speed = _sprint_speed;
+            }
+            _move.Move(_input_handler.GetVec3(InputType.Move), speed);
+            SetAnimState("Speed", _move.GetVelocity().magnitude /_sprint_speed);
         }
 
         private void InitFsm()
@@ -65,6 +94,11 @@ namespace Control
             _animator.SetTrigger(trigger_name);
         }
 
+        public void SetAnimLayerWeight(int layer, float weight)
+        {
+            weight = Mathf.Min(1, weight);
+            _animator.SetLayerWeight(layer, weight);
+        }
         public InputHandler GetInputHandler()
         {
             return _input_handler;
