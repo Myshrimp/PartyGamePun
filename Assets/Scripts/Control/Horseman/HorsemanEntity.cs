@@ -10,11 +10,13 @@ namespace Control
     public class HorsemanEntity : EntityBase
     {
         [SerializeField] private StateConfig _state_config;
+        [SerializeField] private CharacterConfig _character_config;
+        private CharacterMovement _move;
         private static int SERIAL_ID=1;
         private IFsm<HorsemanEntity> _fsm;
         private Animator _animator;
         private InputHandler _input_handler;
-
+        private float _max_speed;
         public StateConfig StateConfig
         {
             get { return _state_config; }
@@ -23,15 +25,19 @@ namespace Control
         private void Awake()
         {
             _state_config.Init();
-            var cof = _state_config;
+            _character_config.Init();
             _input_handler = new InputHandler();
             _animator = GetComponent<Animator>();
+            _move = GetComponent<CharacterMovement>();
+
+            _max_speed = _character_config.float_map["MaxSpeed"];
             InitFsm();
         }
 
         private void Update()
         {
             _input_handler.OnUpdate();
+            _move.Move(_input_handler.GetVec3(InputType.Move), _max_speed);
         }
 
         private void InitFsm()
