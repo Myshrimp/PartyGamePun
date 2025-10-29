@@ -19,6 +19,7 @@ namespace Control
         private InputHandler _input_handler;
         private float _max_speed;
         private float _sprint_speed;
+        private bool _is_locking;
         public StateConfig StateConfig
         {
             get { return _state_config; }
@@ -49,7 +50,18 @@ namespace Control
             HandleMovement();
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                _cam_controller.SwitchState(CameraController.CameraState.LockTarget);
+                if (_is_locking)
+                {
+                    _move.ExitLockState();
+                    _cam_controller.SwitchState(CameraController.CameraState.FollowPlayer);
+                    _is_locking = false;
+                }
+                else
+                {
+                    _move.EnterLockState(_cam_controller.LockTargetTransform);
+                    _cam_controller.SwitchState(CameraController.CameraState.LockTarget);
+                    _is_locking = true;
+                }
             }
 
             if (Input.GetKeyDown(KeyCode.R))

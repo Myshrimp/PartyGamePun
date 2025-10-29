@@ -14,7 +14,29 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 moveDirection;
     private bool isGrounded;
     private bool isJumping;
+    private bool _is_locking = false;
+    private Transform _lock_target = null;
 
+    public void ExitLockState()
+    {
+        _is_locking = false;
+        _lock_target = null;
+    }
+
+    public void EnterLockState(Transform target)
+    {
+        _is_locking = true;
+        _lock_target = target;
+    }
+    public bool IsLocking
+    {
+        get { return _is_locking; }
+    }
+
+    public Transform LockTarget
+    {
+        get { return _lock_target; }
+    }
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -39,6 +61,10 @@ public class CharacterMovement : MonoBehaviour
     /// <param name="speed">移动速度</param>
     public void Move(Vector3 direction, float speed)
     {
+        if (_is_locking)
+        {
+            direction = transform.forward * direction.z + transform.right * direction.x;
+        }
         moveDirection = direction.normalized;
         moveSpeed = speed;
     }
@@ -77,7 +103,15 @@ public class CharacterMovement : MonoBehaviour
     /// </summary>
     private void HandleRotation()
     {
-        if (moveDirection != Vector3.zero)
+        if (_is_locking)
+        {
+            Vector3 look = _lock_target.position - transform.position;
+            look.y = 0;
+            look.Normalize();
+            Quaternion targetRotation = Quaternion.LookRotation(look);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
+        else if (moveDirection != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);

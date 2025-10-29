@@ -46,6 +46,12 @@ public class CameraController : MonoBehaviour
     private float currentShakeDuration; // 当前震动剩余时间
     private Quaternion targetRotation; // 目标旋转
 
+    public Transform LockTargetTransform
+    {
+        get { return lockTarget; }
+        set { lockTarget = value; }
+    }
+
     private void Start()
     {
         if (cam == null)
