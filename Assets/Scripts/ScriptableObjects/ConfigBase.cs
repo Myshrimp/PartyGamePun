@@ -10,11 +10,15 @@ namespace ScriptableObjects
         public List<Vector3Property> vector3_properties= new();
         public List<BoolProperty> bool_properties= new();
         public List<IntProperty> int_properties= new();
+        public List<StringProperty> string_properties = new();
+        public List<GameObjectProperty> gameObject_properties = new();
 
         public Dictionary<string, float> float_map= new();
         public Dictionary<string, bool> bool_map= new();
         public Dictionary<string, Vector3> vector3_map= new();
-        public Dictionary<string, int> int_map= new(); 
+        public Dictionary<string, int> int_map= new();
+        public Dictionary<string, string> string_map = new();
+        public Dictionary<string, GameObject> gameObject_map = new();
         public void Init()
         {
             foreach (var v in float_properties )
@@ -32,6 +36,14 @@ namespace ScriptableObjects
             foreach (var v in vector3_properties )
             {
                 vector3_map[v.key] = v.value;
+            }
+            foreach (var v in string_properties )
+            {
+                string_map[v.key] = v.value;
+            }
+            foreach (var v in gameObject_properties )
+            {
+                gameObject_map[v.key] = v.value;
             }
         }
     }

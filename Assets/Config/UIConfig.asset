@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d10411131b421c8d4cd4dd5012d5bb, type: 3}
+  m_Name: UIConfig
+  m_EditorClassIdentifier: 
+  float_properties: []
+  vector3_properties: []
+  bool_properties: []
+  int_properties: []
+  string_properties:
+  - key: StartView
+    value: Assets/Resources/Prefabs/UI/StartView.prefab
+  gameObject_properties:
+  - key: StartView
+    value: {fileID: 7181862973942170538, guid: d2141196b8d6cdd45a3779d01da347fe, type: 3}
+  - key: RoomView
+    value: {fileID: 0}
