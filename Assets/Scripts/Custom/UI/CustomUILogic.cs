@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Party.Custom
+namespace Party.Custom.UI
 {
     public class CustomUILogic : UIFormLogic
     {

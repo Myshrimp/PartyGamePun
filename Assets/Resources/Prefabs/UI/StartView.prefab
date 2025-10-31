@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7181862973942170533}
   - component: {fileID: -1874340636885825641}
-  - component: {fileID: 2676678114173927698}
+  - component: {fileID: 6747682983989143582}
   m_Layer: 5
   m_Name: StartView
   m_TagString: Untagged
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f627c32af5133a24f829e711fafe42fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2676678114173927698
+--- !u!114 &6747682983989143582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,9 +217,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7181862973942170538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ba906886b1647b19cc3e21f0cb06aa2, type: 3}
+  m_Script: {fileID: 11500000, guid: 683205b4a03345b3ba3c291a68776bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _start_btn: {fileID: 7181862974044795571}
 --- !u!1 &7181862974044795569
 GameObject:
   m_ObjectHideFlags: 0
