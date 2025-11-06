@@ -19,8 +19,8 @@ MonoBehaviour:
   string_properties:
   - key: StartView
     value: Assets/Resources/Prefabs/UI/StartView.prefab
-  gameObject_properties:
-  - key: StartView
-    value: {fileID: 7181862973942170538, guid: d2141196b8d6cdd45a3779d01da347fe, type: 3}
+  - key: RoomListView
+    value: Assets/Resources/Prefabs/UI/RoomListView.prefab
   - key: RoomView
-    value: {fileID: 0}
+    value: Assets/Resources/Prefabs/UI/RoomView.prefab
+  gameObject_properties: []

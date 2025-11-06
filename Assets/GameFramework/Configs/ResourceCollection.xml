@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <ResourceCollection>
+    <Resources>
+      <Resource Name="3rdParty/HealthBar/Demo/Demo" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/HealthBar/Demo/Materials/Red" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/HealthBar/Prefabs/Healthbar" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/HealthBar/Textures/Healthbar-Empty" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/HealthBar/Textures/Healthbar-Filled-Green" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/HealthBar/Textures/Healthbar-Filled-Red" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonMaterialsShaders/PolyArtMaskTint" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonMaterialsShaders/PolyArtMaskTint01" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonMaterialsShaders/PolyartStandard" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonMaterialsShaders/Skybox_Mat" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage1" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage2" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage3" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage4" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage5" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonTextures/Mask" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonTextures/Mask2" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonTextures/PolyartMaskTint" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/CommonTextures/PolyartStandard" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/Scenes/AllTogether" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/Scenes/Polyart_MaskTint_Human" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/Scenes/Polyart_MaskTint_Sentinel" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/Scenes/Polyart_MaskTint_Undead" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/Scenes/Polyart_MaskTint_Warband" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/Scenes/Polyart_Standard_Human" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/Scenes/Polyart_Standard_Sentinel" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/Scenes/Polyart_Standard_Undead" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/Scenes/Polyart_Standard_Warband" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/LittleCharacters/SRP/HowToTestSRPs" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Prefabs/CircularProgressBar_180" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Prefabs/CircularProgressBar_270" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Prefabs/CircularProgressBar_360" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Prefabs/CircularProgressBar_Super" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Prefabs/ClassicProgressBar" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Prefabs/ProgressBar" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Resources/box_bar" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Resources/circular_bar" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Scenes/Demo" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_01_animal/bar_01_animal" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_01_animal/png/bar_01_animal_layer_1" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_01_animal/png/bar_01_animal_layer_2" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_01_animal/png/bar_01_animal_layer_3" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_02_candy/bar_02_candy" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_02_candy/png/bar_02_candy_layer_01" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_02_candy/png/bar_02_candy_layer_02" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_03_worm/bar_03_worm" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_03_worm/png/bar_03_worm_layer_1" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_03_worm/png/bar_03_worm_layer_2" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_04_grey/bar_04_grey" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_04_grey/png/bar_04_grey_layer_1" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_04_grey/png/bar_04_grey_layer_2" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_05_bow/bar_05_bow" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_05_bow/png/bar_05_bow_layer_1" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_05_bow/png/bar_05_bow_layer_2" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/bar_05_bow/png/bar_05_bow_layer_3" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/circle_01_fan/circle_01_fan" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/circle_01_fan/circle_01_fan_layer_1" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/circle_02_spiral/circle_02_spiral" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/circle_03_shuriken/circle_03_shuriken" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/circle_04_donut/circle_04_donut" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/ProgressBar/Sprites/circle_05_circle/circle_05_circle" LoadType="0" Packed="False" />
+      <Resource Name="3rdParty/UI_Resources/Scenes/SampleScene" LoadType="0" Packed="False" />
+      <Resource Name="Config/CharacterConfig" LoadType="0" Packed="False" />
+      <Resource Name="Config/Horseman" LoadType="0" Packed="False" />
+      <Resource Name="Config/SceneConfig" LoadType="0" Packed="False" />
+      <Resource Name="Config/UIConfig" LoadType="0" Packed="False" />
+      <Resource Name="GameFramework/Configs/ResourceBuilder" LoadType="0" Packed="False" />
+      <Resource Name="GameFramework/Configs/ResourceCollection" LoadType="0" Packed="False" />
+      <Resource Name="GameFramework/Configs/ResourceEditor" LoadType="0" Packed="False" />
+      <Resource Name="Readme" LoadType="0" Packed="False" />
+      <Resource Name="Resources/AnimControllers/Horseman" LoadType="0" Packed="False" />
+      <Resource Name="Resources/Prefabs/UI/PlayerListItem" LoadType="0" Packed="False" />
+      <Resource Name="Resources/Prefabs/UI/RoomListItem" LoadType="0" Packed="False" />
+      <Resource Name="Resources/Prefabs/UI/RoomListView" LoadType="0" Packed="False" />
+      <Resource Name="Resources/Prefabs/UI/RoomView" LoadType="0" Packed="False" />
+      <Resource Name="Resources/Prefabs/UI/StartView" LoadType="0" Packed="False" />
+      <Resource Name="Scenes/CharacterAnim" LoadType="0" Packed="False" />
+      <Resource Name="Scenes/Init" LoadType="0" Packed="False" />
+      <Resource Name="Scenes/Menu" LoadType="0" Packed="False" />
+    </Resources>
+    <Assets>
+      <Asset Guid="01d956ccf64ce4e8fa6b0a34f656fa54" ResourceName="3rdParty/ProgressBar/Sprites/circle_03_shuriken/circle_03_shuriken" />
+      <Asset Guid="024be68459b6ddc45a3a2cbc34e58fb0" ResourceName="Scenes/Menu" />
+      <Asset Guid="0504e12a413724c66bd594a2fe4aaadc" ResourceName="3rdParty/ProgressBar/Sprites/circle_04_donut/circle_04_donut" />
+      <Asset Guid="0a0f1751d9b2c4855814f431fbe71c51" ResourceName="3rdParty/ProgressBar/Prefabs/CircularProgressBar_360" />
+      <Asset Guid="0b3e011c8e747a042a9c7ef3742e83db" ResourceName="3rdParty/HealthBar/Demo/Demo" />
+      <Asset Guid="0cdc25ac370c58c44afd4c1b0319c880" ResourceName="GameFramework/Configs/ResourceCollection" />
+      <Asset Guid="0e20f0152696b5c4fb9effb5e7e7cd76" ResourceName="3rdParty/LittleCharacters/CommonMaterialsShaders/PolyArtMaskTint01" />
+      <Asset Guid="0ea450e8a98a74802b1049eccbeecb8d" ResourceName="3rdParty/ProgressBar/Sprites/circle_04_donut/circle_04_donut" />
+      <Asset Guid="0ed68da2929764a238bcd795fc45b11d" ResourceName="3rdParty/ProgressBar/Sprites/bar_01_animal/bar_01_animal" />
+      <Asset Guid="156839be03a662a44a52187e15080299" ResourceName="GameFramework/Configs/ResourceEditor" />
+      <Asset Guid="18dc0cd2c080841dea60987a38ce93fa" ResourceName="UniversalRenderPipelineGlobalSettings" />
+      <Asset Guid="1ab206cf1b7a91e408abb8a78f5cf510" ResourceName="Scenes/Scripts/GameFramework/Libraries/GameFramework/GameFramework" />
+      <Asset Guid="209c9b5f503280d409d79d16bff57af5" ResourceName="Resources/Prefabs/UI/RoomListItem" />
+      <Asset Guid="209d4c18c748d4486a4077597649d683" ResourceName="3rdParty/ProgressBar/Sprites/bar_01_animal/bar_01_animal" />
+      <Asset Guid="22ce013245f660549875efe103c4eb2d" ResourceName="3rdParty/LittleCharacters/Scenes/Polyart_Standard_Sentinel" />
+      <Asset Guid="26c8d0a88c1116b45b1c3f1c170f0c16" ResourceName="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage1" />
+      <Asset Guid="271d8dd28ea0fb341a9b52a338d841ec" ResourceName="3rdParty/LittleCharacters/Scenes/Polyart_MaskTint_Warband" />
+      <Asset Guid="2ae8a1d7dbae84b06b5126ef13845935" ResourceName="3rdParty/ProgressBar/Sprites/bar_05_bow/png/bar_05_bow_layer_2" />
+      <Asset Guid="2c5fdfb800ca24c5095ce852c6f980db" ResourceName="3rdParty/ProgressBar/Sprites/circle_01_fan/circle_01_fan_layer_1" />
+      <Asset Guid="2cda990e2423bbf4892e6590ba056729" ResourceName="3rdParty/UI_Resources/Scenes/SampleScene" />
+      <Asset Guid="2f06be5cc89f84f48bfe39a1f88242c4" ResourceName="3rdParty/LittleCharacters/CommonTextures/PolyartMaskTint" />
+      <Asset Guid="335839a805970dc4f8bbb53f1f0286a3" ResourceName="3rdParty/HealthBar/Textures/Healthbar-Filled-Red" />
+      <Asset Guid="351baf954590df348a71254a311227b1" ResourceName="3rdParty/HealthBar/Prefabs/Healthbar" />
+      <Asset Guid="363c5eb08ff8e6a439b85e37b8c20d96" ResourceName="Scenes/Scripts/GameFramework/Scripts/Runtime/UnityGameFramework" />
+      <Asset Guid="3648aa931e5bb4520ba74a922b905455" ResourceName="3rdParty/ProgressBar/Sprites/bar_04_grey/png/bar_04_grey_layer_1" />
+      <Asset Guid="365fb17a46f5a4f6aa48460d9eb5123d" ResourceName="3rdParty/ProgressBar/Sprites/bar_02_candy/png/bar_02_candy_layer_02" />
+      <Asset Guid="3a5b7a5c2e89046ac8dd542edf2a23d5" ResourceName="3rdParty/ProgressBar/Prefabs/CircularProgressBar_270" />
+      <Asset Guid="3e58cb814c3c76d469b302fa82fc824f" ResourceName="Resources/AnimControllers/Horseman" />
+      <Asset Guid="3f5a1fbb708e2134e847ddb5d62dd6a1" ResourceName="Resources/Prefabs/UI/RoomView" />
+      <Asset Guid="40a3739255b27ee438257986af7f50fe" ResourceName="3rdParty/LittleCharacters/CommonTextures/PolyartStandard" />
+      <Asset Guid="4313f5e0d3746473bb2aaf0b724e1ba7" ResourceName="3rdParty/ProgressBar/Sprites/bar_04_grey/bar_04_grey" />
+      <Asset Guid="441bf30b2e6b8e54da85f2344f6e6c8c" ResourceName="3rdParty/LittleCharacters/Scenes/Polyart_MaskTint_Human" />
+      <Asset Guid="48a2099f4b3e1d742a4f4eb4dc0584a3" ResourceName="3rdParty/ProgressBar/Resources/circular_bar" />
+      <Asset Guid="49885eb5739feec4994eb8d52b516aeb" ResourceName="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage3" />
+      <Asset Guid="49e192b58ab530949871106971e13456" ResourceName="3rdParty/HealthBar/Demo/Materials/Red" />
+      <Asset Guid="53c936a0eb62a1745a9d0186ac186ff6" ResourceName="3rdParty/LittleCharacters/CommonMaterialsShaders/PolyartStandard" />
+      <Asset Guid="56c47a1ba7a7f43b5a963558548b82b1" ResourceName="3rdParty/ProgressBar/Sprites/bar_03_worm/bar_03_worm" />
+      <Asset Guid="5a3a376b701511242ba9e3f0975a605e" ResourceName="3rdParty/LittleCharacters/SRP/HowToTestSRPs" />
+      <Asset Guid="5bf81cc2e892e43a58b7bfb5a05e7c6e" ResourceName="3rdParty/ProgressBar/Sprites/circle_02_spiral/circle_02_spiral" />
+      <Asset Guid="5d164c105aa81d84ab19df51fbdb19b5" ResourceName="3rdParty/LittleCharacters/Scenes/Polyart_MaskTint_Sentinel" />
+      <Asset Guid="645fa706719724827b4c7421232e3ce2" ResourceName="3rdParty/ProgressBar/Sprites/bar_03_worm/png/bar_03_worm_layer_2" />
+      <Asset Guid="657ccc9a8ae8192479fa060be26ddb95" ResourceName="GameFramework/Configs/ResourceBuilder" />
+      <Asset Guid="68685167e4474ba4886181e733c310f1" ResourceName="Resources/Prefabs/UI/PlayerListItem" />
+      <Asset Guid="6b545d16ce9b04123bf8e6c93d4cffb0" ResourceName="3rdParty/ProgressBar/Sprites/bar_01_animal/png/bar_01_animal_layer_3" />
+      <Asset Guid="6b71e795d63ec934d96a34f069eb9863" ResourceName="Config/UIConfig" />
+      <Asset Guid="707360a9c581a4bd7aa53bfeb1429f71" ResourceName="Settings/URP-Performant-Renderer" />
+      <Asset Guid="70faa27514bfd574fa3754d72440b0f5" ResourceName="Config/Horseman" />
+      <Asset Guid="727a75301c3d24613a3ebcec4a24c2c8" ResourceName="TutorialInfo/Icons/URP" />
+      <Asset Guid="72dd83e931a71b44cb7f67a004673dc9" ResourceName="Resources/Prefabs/UI/RoomListView" />
+      <Asset Guid="7b7fd9122c28c4d15b667c7040e3b3fd" ResourceName="Settings/URP-HighFidelity" />
+      <Asset Guid="8105016687592461f977c054a80ce2f2" ResourceName="Readme" />
+      <Asset Guid="827411f56e52d4aa0b58426bc43fbff8" ResourceName="3rdParty/ProgressBar/Sprites/bar_03_worm/bar_03_worm" />
+      <Asset Guid="827d26cc5a5a043df95578c9a022dead" ResourceName="3rdParty/ProgressBar/Prefabs/ProgressBar" />
+      <Asset Guid="8cf450823d66d42b0a496050e3d32d56" ResourceName="3rdParty/ProgressBar/Sprites/bar_02_candy/bar_02_candy" />
+      <Asset Guid="8f8097b2df09fb742aac2175193c8209" ResourceName="3rdParty/LittleCharacters/CommonMaterialsShaders/PolyArtMaskTint" />
+      <Asset Guid="97d2569caea178e47b1bfd61728d440f" ResourceName="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage4" />
+      <Asset Guid="97facc7c64f86d245957c5ac69ddf3b9" ResourceName="3rdParty/LittleCharacters/Scenes/Polyart_Standard_Warband" />
+      <Asset Guid="99c9720ab356a0642a771bea13969a05" ResourceName="Scenes/CharacterAnim" />
+      <Asset Guid="9d400e40b2057494fa65aa47a7b6f1df" ResourceName="3rdParty/ProgressBar/Sprites/bar_02_candy/png/bar_02_candy_layer_01" />
+      <Asset Guid="a2d8a19598eca814496b089021d08d60" ResourceName="Scenes/Scripts/GameFramework/Scripts/Editor/UnityGameFramework" />
+      <Asset Guid="a3548f7e9f5b54be6a8fce2579782868" ResourceName="3rdParty/ProgressBar/Sprites/bar_01_animal/png/bar_01_animal_layer_1" />
+      <Asset Guid="a6560a915ef98420e9faacc1c7438823" ResourceName="Settings/SampleSceneProfile" />
+      <Asset Guid="a6c1bdc470be0b4439d2c77a4c1d6a8c" ResourceName="3rdParty/LittleCharacters/CommonTextures/Mask2" />
+      <Asset Guid="a868ea673a894194ab9a18a4743a2739" ResourceName="Scenes/Init" />
+      <Asset Guid="adb3eb1c35fcff14f89fba7b05c9d71c" ResourceName="Scenes/Scripts/GameFramework/Prefabs/GameFramework" />
+      <Asset Guid="b1cf8e270e75836498a2f950320445df" ResourceName="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage5" />
+      <Asset Guid="b4a1de36b2a8a41e98b94eaa2ab65bab" ResourceName="3rdParty/ProgressBar/Sprites/bar_05_bow/png/bar_05_bow_layer_3" />
+      <Asset Guid="b516b4824d314413ebd94ba1bfb0f355" ResourceName="3rdParty/ProgressBar/Sprites/bar_05_bow/png/bar_05_bow_layer_1" />
+      <Asset Guid="b95b579b1a15347c4b62d578d7abbb78" ResourceName="3rdParty/ProgressBar/Sprites/bar_05_bow/bar_05_bow" />
+      <Asset Guid="bd85c7ee8c05e4e50a9e161d32e251a4" ResourceName="3rdParty/ProgressBar/Sprites/circle_02_spiral/circle_02_spiral" />
+      <Asset Guid="c16a96e1457f546898def673849754ae" ResourceName="3rdParty/ProgressBar/Sprites/circle_05_circle/circle_05_circle" />
+      <Asset Guid="c2f3b72ab17ce124c8a2158636e7fd23" ResourceName="Config/SceneConfig" />
+      <Asset Guid="c40254854d2b041af98be19b28a2bb14" ResourceName="3rdParty/ProgressBar/Prefabs/CircularProgressBar_Super" />
+      <Asset Guid="c40be3174f62c4acf8c1216858c64956" ResourceName="Settings/URP-HighFidelity-Renderer" />
+      <Asset Guid="c540e730533df4f258fdc930a4532e89" ResourceName="3rdParty/ProgressBar/Sprites/circle_01_fan/circle_01_fan" />
+      <Asset Guid="c6101e69432f98046af1e192f84e0101" ResourceName="3rdParty/LittleCharacters/Scenes/Polyart_Standard_Human" />
+      <Asset Guid="c819cbd94891344caa4d93b66954cafe" ResourceName="3rdParty/ProgressBar/Sprites/bar_02_candy/bar_02_candy" />
+      <Asset Guid="ce6b9ab5633699140a4e25b9f8c40dce" ResourceName="3rdParty/LittleCharacters/Scenes/AllTogether" />
+      <Asset Guid="d05767543292346c4a583ed004563c75" ResourceName="3rdParty/ProgressBar/Scenes/Demo" />
+      <Asset Guid="d0e2fc18fe036412f8223b3b3d9ad574" ResourceName="Settings/URP-Performant" />
+      <Asset Guid="d2d7dc5fec8d6b34d8640a166d001212" ResourceName="3rdParty/LittleCharacters/CommonMaterialsShaders/Skybox_Mat" />
+      <Asset Guid="de60f736050bf449585ff3e554d97d9d" ResourceName="3rdParty/ProgressBar/Sprites/bar_04_grey/png/bar_04_grey_layer_2" />
+      <Asset Guid="de70efd27ac5e49bd8cebff8c77305f4" ResourceName="3rdParty/ProgressBar/Prefabs/CircularProgressBar_180" />
+      <Asset Guid="dea1ff9608588c14ab9d2dd4887ac6db" ResourceName="3rdParty/LittleCharacters/CommonTextures/Mask" />
+      <Asset Guid="e1260c1148f6143b28bae5ace5e9c5d1" ResourceName="Settings/URP-Balanced" />
+      <Asset Guid="e1ba5a4b285854f0ea9aad90395bcbc7" ResourceName="3rdParty/ProgressBar/Resources/box_bar" />
+      <Asset Guid="e3be356cd96629d438229f3485272fa3" ResourceName="3rdParty/LittleCharacters/Scenes/Polyart_Standard_Undead" />
+      <Asset Guid="e529d2affdb69454984906ae1c165f40" ResourceName="3rdParty/ProgressBar/Sprites/bar_03_worm/png/bar_03_worm_layer_1" />
+      <Asset Guid="e60d962587e8cff4abebae136b712f37" ResourceName="Config/CharacterConfig" />
+      <Asset Guid="e634585d5c4544dd297acaee93dc2beb" ResourceName="Settings/URP-Balanced-Renderer" />
+      <Asset Guid="ec5348278bc63496f94958aa5355cce7" ResourceName="3rdParty/ProgressBar/Sprites/bar_01_animal/png/bar_01_animal_layer_2" />
+      <Asset Guid="edda7fe48fbe443b3840e0bbb9325b16" ResourceName="3rdParty/ProgressBar/Sprites/circle_05_circle/circle_05_circle" />
+      <Asset Guid="f1ca9e76a7c95ec4e91fe87161dd9078" ResourceName="3rdParty/HealthBar/Textures/Healthbar-Filled-Green" />
+      <Asset Guid="f4f1b5ccee03ad14e9ee2e8f47b9bca2" ResourceName="3rdParty/LittleCharacters/CommonMaterialsShaders/Stage2" />
+      <Asset Guid="f6470122ed2a04396806ed472fb032ff" ResourceName="3rdParty/ProgressBar/Prefabs/ClassicProgressBar" />
+      <Asset Guid="f9e80be8c5e85e542a06a8a377296e23" ResourceName="3rdParty/HealthBar/Textures/Healthbar-Empty" />
+      <Asset Guid="fcfe445cd95b3b3439a6e3f45b8bae67" ResourceName="3rdParty/LittleCharacters/Scenes/Polyart_MaskTint_Undead" />
+      <Asset Guid="fe997be03ac864003829e4d609a8b338" ResourceName="3rdParty/ProgressBar/Sprites/circle_03_shuriken/circle_03_shuriken" />
+      <Asset Guid="fffb038cbc618d84185238e93a56d47d" ResourceName="Resources/Prefabs/UI/StartView" />
+    </Assets>
+  </ResourceCollection>
+</UnityGameFramework>

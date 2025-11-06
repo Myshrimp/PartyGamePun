@@ -1,28 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using GameFramework.Event;
+using Party.Base;
+using Party.Event;
 using Photon.Pun;
-using Photon.Pun.Demo.Cockpit;
 using Photon.Realtime;
 using UnityEngine;
-using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace ShrimpFPS.Runtime
 {
     public class RoomManager : MonoBehaviourPunCallbacks
     {
-        [SerializeField] private bool autoSyncScene = true;
-        [SerializeField] private InputField roomNameText;
-        [SerializeField] private GameObject roomPrefab;
-        [SerializeField] private GameObject playerInfoPrefab;
-        [SerializeField] private Transform roomListTransform;
-        [SerializeField] private Transform playerListTransform;
-        private List<Room> existingRooms;
+        [SerializeField] private bool autoSyncScene;
+        private List<RoomInfo> _existing_rooms;
 
         public Action JoinedLobby;
         private void Awake()
         {
-            existingRooms = new List<Room>();
+            _existing_rooms = new List<RoomInfo>();
             ConnectToChina();
             DontDestroyOnLoad(this);
         }
@@ -38,9 +34,16 @@ namespace ShrimpFPS.Runtime
             PhotonNetwork.LocalPlayer.NickName = Random.Range(0, 10000).ToString();
         }
 
-        public void CreateAndJoinRoom()
+        public void FetchRooms()
         {
-            PhotonNetwork.CreateRoom(roomNameText.text);
+            RoomUpdateArgs room_args = new RoomUpdateArgs();
+            room_args.room_infos = _existing_rooms;
+            GameEntry.Event.FireNow(this, room_args);
+        }
+        public void CreateAndJoinRoom(string room_name)
+        {
+            PhotonNetwork.CreateRoom(room_name);
+            Debug.Log("Created a room");
         }
 
         public void JoinRoom(string room_id)
@@ -54,6 +57,7 @@ namespace ShrimpFPS.Runtime
             Debug.Log("Successfully joined lobby");
             PhotonNetwork.AutomaticallySyncScene = autoSyncScene;
             JoinedLobby?.Invoke();
+            GameEntry.UI.OpenUIForm(GameEntry.Config.GetString("StartView"), "MainMenu", false, this);
         }
 
         public override void OnConnectedToMaster()
@@ -63,31 +67,24 @@ namespace ShrimpFPS.Runtime
         }
         public override void OnRoomListUpdate(List<RoomInfo> infos)
         {
-            Debug.Log("Room list update");
-            foreach(Transform trans in roomListTransform)
-            {
-                Destroy(trans);
-            }
-
-            for (int i = 0; i < infos.Count; i++)
-            {
-                Instantiate(roomPrefab, roomListTransform).GetComponent<RoomItem>().SetRoomName(infos[i].Name);
-            }
+            RoomUpdateArgs room_args = new RoomUpdateArgs();
+            room_args.room_infos = infos;
+            _existing_rooms = infos;
+            GameEntry.Event.FireNow(this, room_args);
+            Debug.Log("Room list updated");
         }
 
         public override void OnJoinedRoom()
         {
-            MenuManager.Instance.OpenMenu("RoomMenu");
-            MenuManager.Instance.CloseMenu("MultiplayerMenu");
-            foreach (var player in PhotonNetwork.PlayerList)
-            {
-                Instantiate(playerInfoPrefab, playerListTransform).GetComponent<PlayerInfoItem>().SetUp(player.NickName);
-            }
+
         }
 
         public override void OnPlayerEnteredRoom(Player newPlayer)
         {
-            Instantiate(playerInfoPrefab, playerListTransform).GetComponent<PlayerInfoItem>().SetUp(newPlayer.NickName);
+            NewPlayerArgs player_args = new NewPlayerArgs();
+            player_args.player = newPlayer;
+            GameEntry.Event.FireNow(this, player_args);
+            Debug.Log("Player entered room:"+newPlayer.UserId);
         }
 
         public void LoadScene(int sceneID)
@@ -106,5 +103,34 @@ namespace ShrimpFPS.Runtime
         public GameObject roomPrefab;
         public string name;
         public int count;
+    }
+    
+    public class RoomUpdateArgs : GameEventArgs
+    {
+        public List<RoomInfo> room_infos;
+        
+        public override void Clear()
+        {
+            room_infos.Clear();
+        }
+
+        public override int Id
+        {
+            get { return (int)EventTypes.OnRoomListUpdate; }
+        }
+    }
+
+    public class NewPlayerArgs : GameEventArgs
+    {
+        public Player player;
+        public override void Clear()
+        {
+            
+        }
+
+        public override int Id
+        {
+            get { return (int)EventTypes.OnNewPlayerJoined; }
+        }
     }
 }

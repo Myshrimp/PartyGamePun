@@ -34,9 +34,8 @@ namespace Party.Base
         {
             if (!GameInit)
             {
-                GameEntry.Config.ParseData("UIConfig");
-                string ui_name = GameEntry.Config.GetString("StartView");
-                GameEntry.UI.OpenUIForm(ui_name, "MainMenu");
+                Config.ParseData("UIConfig");
+                Config.ParseData("SceneConfig");
                 GameInit = true;
             }
         }

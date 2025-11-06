@@ -13,6 +13,7 @@ namespace Party.Custom.UI
             m_ui_form = GetComponent<UIForm>();
             m_rect_transform = m_ui_form.gameObject.GetComponent<RectTransform>();
             m_rect_transform.localPosition  =Vector3.zero;
+            m_ui_form.transform.parent.localPosition = Vector3.zero;
         }
     }
 }
