@@ -1,5 +1,4 @@
-﻿using ShrimpFPS.Runtime;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using Party.Base;
 
@@ -10,13 +9,11 @@ namespace Party.Custom.UI
         [SerializeField] private Button _btn_rooms;
         [SerializeField] private Button _btn_create_room;
         [SerializeField] private InputField _txt_input_room_name;
-        private RoomManager _room_manager;
         protected override void OnInit(object userData)
         {
             base.OnInit(userData);
             _btn_rooms.onClick.AddListener(OpenRoomList);
             _btn_create_room.onClick.AddListener(CreateRoom);
-            _room_manager = (RoomManager)userData;
         }
 
         protected override void OnClose(bool isShutdown, object userData)
@@ -27,8 +24,7 @@ namespace Party.Custom.UI
         private void CreateRoom()
         {
             string ui_path = GameEntry.Config.GetString("RoomView");
-            GameEntry.UI.OpenUIForm(ui_path, "MainMenu", true, _room_manager);
-            _room_manager.CreateAndJoinRoom(_txt_input_room_name.text);
+            GameEntry.UI.OpenUIForm(ui_path, "MainMenu", true);
         }
 
         private void Close()
@@ -40,7 +36,7 @@ namespace Party.Custom.UI
         {
             Debug.Log("Opening room list");
             string ui_path = GameEntry.Config.GetString("RoomListView");
-            GameEntry.UI.OpenUIForm(ui_path,"MainMenu", true, _room_manager);
+            GameEntry.UI.OpenUIForm(ui_path,"MainMenu", true);
         }
     }
 }
